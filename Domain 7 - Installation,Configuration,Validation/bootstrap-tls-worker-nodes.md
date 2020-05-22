@@ -26,6 +26,8 @@ stringData:
   auth-extra-groups: system:bootstrappers:worker,system:bootstrappers:ingress
 EOF
 ```
+kubectl apply -f bootstrap-token.yaml 
+ 
 #### Step 2: Allow kube-apiserver to accept bootstrap tokens:
 ```sh
 --enable-bootstrap-token-auth=true
